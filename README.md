@@ -1,6 +1,6 @@
 # Movie Revenue Correlation Analysis
 
-**A Python analysis of movie revenue drivers using correlation, categorical encoding, and revenue concentration by studio.**
+**A Python notebook analysis of movie revenue drivers using correlation, categorical encoding, and revenue concentration by studio.**
 
 This project investigates which movie attributes are most associated with gross revenue. It starts with a common analytics mistake: reducing a dataframe to numeric columns and accidentally losing business fields like `company`. The final notebook fixes that issue by preserving the original dataset, using separate working dataframes, and building a cleaner analysis story.
 
@@ -30,7 +30,9 @@ The analysis focuses on:
 | Warner Bros. leads total gross revenue in this dataset | Studio-level totals help show market concentration across companies. |
 | Encoded categories require caution | Turning text labels into numeric codes can help exploration, but category codes are not true measured quantities. |
 
-## Visual Story
+## Notebook Visuals
+
+The images below are exported from the main notebook outputs so the README can show the analysis without requiring a reviewer to open the notebook first.
 
 ### 1. Gross revenue has large outliers
 
@@ -88,8 +90,7 @@ That prevents category coding from overwriting the original text fields.
 | --- | --- |
 | [notebooks/movies.ipynb](notebooks/movies.ipynb) | Main analysis notebook |
 | [data/movies.csv](data/movies.csv) | Source movie dataset |
-| [scripts/generate_readme_visuals.py](scripts/generate_readme_visuals.py) | Recreates README visuals |
-| [assets/](assets/) | Exported visual outputs |
+| [assets/](assets/) | Notebook visual exports used in this README |
 
 ## Skills Demonstrated
 
@@ -116,13 +117,7 @@ Open the notebook:
 notebooks/movies.ipynb
 ```
 
-Run all cells from the top. The notebook is designed so `df` remains the full dataset throughout the analysis.
-
-To regenerate README visuals:
-
-```bash
-python scripts/generate_readme_visuals.py
-```
+Run all cells from the top. The notebook is designed so `df` remains the full dataset throughout the analysis. The README visuals are exported from the notebook outputs.
 
 ## Limitations
 
